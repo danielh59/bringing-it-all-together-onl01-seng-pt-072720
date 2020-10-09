@@ -82,7 +82,7 @@ def self.find_or_create_by(name:, breed:)
         SELECT * FROM dogs
         WHERE name = ? AND breed = ?
         SQL
-  
+
         dog = DB[:conn].execute(sql, name, breed).first
     if !dog.empty?
       doggie_data = dog[0]
