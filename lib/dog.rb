@@ -54,7 +54,7 @@ class Dog
     name = doggie_data[1]
     breed = doggie_data[2]
     dog = self.new(id, name, breed)
-    dog
+    # dog
   end
 
 
