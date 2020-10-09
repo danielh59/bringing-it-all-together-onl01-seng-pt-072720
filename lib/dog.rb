@@ -49,13 +49,13 @@ class Dog
       dog
   end
 
-  def self.new_from_db(doggie_data)
-    id = doggie_data[0]
-    name = doggie_data[1]
-    breed = doggie_data[2]
-    dog = self.new(id, name, breed)
-    dog
-  end
-
+  def self.new_from_db(row)
+  attributes_hash = {
+    :id => row[0],
+    :name => row[1],
+    :breed => row[2]
+  }
+  self.new(attributes_hash)
+end
 
 end
