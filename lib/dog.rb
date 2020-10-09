@@ -48,5 +48,5 @@ class Dog
       student.save
       student
   end
-  
+
 end
