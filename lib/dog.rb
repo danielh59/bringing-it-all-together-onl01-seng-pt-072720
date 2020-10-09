@@ -48,6 +48,7 @@ class Dog
       dog.save
       dog
   end
+
   def self.new_from_db(doggie_data)
     id = doggie_data[0]
     name = doggie_data[1]
@@ -55,4 +56,6 @@ class Dog
     dog = self.new(id, name, breed)
     dog
   end
+
+
 end
